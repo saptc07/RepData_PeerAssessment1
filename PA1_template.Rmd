@@ -39,9 +39,11 @@ averages[which.max(averages$steps),]
 
 ## Imputing missing values
 
-There are many days/intervals where there are missing values (or `NA`). The presence of missing days may introduce bias into some calculations or summaries of the data.
+There are many days/intervals where there are missing values (or `NA`).
+The presence of missing days may introduce bias into some calculations 
+or summaries of the data.
 
-```{r how_many_missing}
+```{r missing_values}
 missing <- is.na(data$steps)
 # How many missing
 table(missing)
